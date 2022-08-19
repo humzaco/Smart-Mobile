@@ -1,0 +1,976 @@
+ /* Font  */
+
+ @font-face {
+    font-family: "poppins-regular";
+    src: url(./Fonts/Poppins-Regular.ttf);
+ }
+ @font-face {
+    font-family: "poppins-medium";
+    src: url(./Fonts/Poppins-Medium.ttf);
+ }
+ @font-face {
+    font-family: "poppins-bold";
+    src: url(./Fonts/Poppins-Bold.ttf);
+ }
+ @font-face {
+    font-family: "poppins-Semibold";
+    src: url(./Fonts/Poppins-SemiBold.ttf);
+ }
+ @font-face {
+    font-family: "poppins-black";
+    src: url(./Fonts/Poppins-Black.ttf);
+ }
+ @font-face {
+    font-family: "poppins-italic";
+    src: url(./Fonts/Poppins-Italic.ttf);
+ }
+ @font-face {
+    font-family: "poppins-light";
+    src: url(./Fonts/Poppins-Light.ttf);
+ }
+
+ /* End  */
+
+
+
+
+
+ /* Colors  */
+
+:root{
+    --primary:#121a27;
+    --secondary:#D90C56;
+    --ternary:#ffd109;
+    --danger:#ededed;
+    --gradient:linear-gradient(291.45deg, #F83B7F -3.37%, #FAAF1E 114.15%);
+    --gradient2:linear-gradient(291.72deg, #F83B7F 6.14%, #FAAF1E 123.86%);
+    --heaven:#ffffff;
+    --text:#231f20;
+    --para:#73686b;
+    --testimonials:#EEEEEE;
+}
+
+/* End  */
+
+
+
+
+
+/* All Tags and Container  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    -webkit-font-smoothing:antialised;
+    font-family: 'poppins-regular';
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* End  */
+
+
+
+
+
+/* Screen Size  */
+
+@media (min-width:1200px) {
+    .container{
+        max-width: 1400px;
+    }
+}
+
+/* End  */
+
+
+
+
+/* Utility Classes  */
+
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-itmes{
+    align-items: center;
+}
+
+/* End  */
+
+
+
+
+
+
+
+
+/* Header  */
+
+header.top{
+    width: 100%;
+    height: 550px;
+    background: var(--gradient);
+    position: relative;
+}
+
+header.top .ellips1 img{
+    position: absolute;
+    left: 106.4rem;
+}
+
+header.top .container .main-wrap .menu{
+    justify-content: space-between;
+    justify-content: center;
+}
+
+header.top .container .main-wrap .menu a{
+    text-decoration: none;
+    color: var(--heaven);
+    margin-right: 2rem;
+    font-weight: 400;
+    transition: all 0.5s ease;
+}
+
+header.top .container .main-wrap .menu a:hover{
+    color: var(--primary);
+}
+
+header.top .container .main-wrap .logo h1{
+    font-family: 'poppins';
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--heaven);
+    margin-left: -5rem;
+}
+
+header.top .container .main-wrap > div:nth-child(3){
+    margin-right: -13rem;
+}
+
+header.top .container .main-wrap > div:nth-child(3) a{
+    display: block;
+    text-decoration: none;
+    color: var(--heaven);
+    transition: all 0.4s ease;
+}
+
+header.top .container .main-wrap > div:nth-child(3) a:hover{
+    color: var(--primary);
+}
+
+header.top .container .main-wrap > div:nth-child(4) a{
+    display: block;
+    padding-top: 1rem;
+    background: var(--heaven);
+    width: 148px;
+    height: 54px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: var(--primary);
+    text-align: center;
+    box-shadow: -12px 5px 30px 1px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+header.top .container .main-wrap > div:nth-child(4) a:hover{
+    background: var(--primary);
+    color: var(--heaven);
+}
+
+header.top .container .main-wrap{
+    padding-top: 1rem;
+}
+
+
+header.top .container .heading{
+    margin-top: 4rem;
+}
+
+header.top .container .heading h1{
+    font-family: 'poppins-bold';
+    font-size: 90px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 113%;
+    color:var(--heaven)
+}
+
+header.top .container .heading p{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 113.5%;
+    text-align: center;
+    color: var(--heaven);
+    margin-top: 2rem;
+}
+
+header.top .container .heading .pra{
+    margin: 0 15rem;
+}
+
+header.top .social-icons a{
+    text-decoration: none;
+    color: var(--heaven);
+    display: block;
+    width: 50px;
+    margin-bottom: 3rem;
+    margin-left: 7rem;
+    transition: all 0.4s ease;
+}
+
+header.top .social-icons a:hover{
+    color: var(--primary);
+}
+
+header.top .line-1{
+    background: var(--heaven);
+    width: 2px;
+    height: 850px;
+    position: absolute;
+    left: 257px;
+    opacity: 0.2;
+}
+
+header.top .line-2{
+    background: var(--heaven);
+    width: 2px;
+    height: 850px;
+    position: absolute;
+    left: 1600px;
+    opacity: 0.2;
+}
+
+header.top .ellips3 img{
+    position: absolute;
+    left: 244px;
+    top: 432px;
+}
+
+header.top .ellipse4 img{
+    position: absolute;
+    left: 1578px;
+    top: 145px;
+}
+
+header.top .container .main-wrap .btn-up{
+    z-index: 2;
+}
+
+/* End  */
+
+
+
+
+
+/* Hero Section  */
+
+section.mobile{
+    background: var(--gradient2);
+    width: 100%;
+    height: 300px;
+}
+
+section.mobile .container .mobile2 img{
+    width: 495px;
+    height: 665px;
+    margin-right: -8rem;
+    margin-left: -8rem;
+    filter: drop-shadow(-10px 10px 30px rgba(0, 0, 0, 0.25));
+}
+
+section.mobile .container .mobile1 img, section.mobile .container .mobile3 img{
+    width: 421px;
+    height: 565px;
+    filter: drop-shadow(-10px 10px 30px rgba(0, 0, 0, 0.25));
+    transition: all 0.4s ease;
+}
+
+section.mobile .container .mobile1 img:hover{
+    width: 495px;
+    height: 665px;
+}
+
+section.mobile .container .mobile3 img:hover{
+    width: 495px;
+    height: 665px;
+}
+
+section.mobile .container .download-btn a img.btnd1, section.mobile .container .download-btn a img.btnd2{
+    transition: all 0.4s ease;
+}
+
+section.mobile .container .download-btn a img.btnd1:hover{
+    transform: scale(96%);
+}
+
+section.mobile .container .download-btn a img.btnd2:hover{
+    transform: scale(96%);
+}
+
+section.mobile .vector2 img{
+    position: absolute;
+    left: 49.07%;
+    right: 0.01%;
+    top: 120.58%;
+    bottom: 67.82%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+section.mobile .ellipse2 img{
+    position: absolute;
+    top: 65rem;
+}
+
+/* End  */
+
+
+
+
+
+
+/* About US  */
+
+section.about-us .container .main-about-wrap h1{
+    font-family: 'poppins-bold';
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--text);
+    padding-top: 38rem;
+    display: flex;
+    justify-content: center;
+}
+
+section.about-us .container .mobile-and-text .mobile-side .about-mobile1 img{
+    width: 495px;
+    height: 665px;
+    margin-top: -38rem;
+    margin-left: 6rem;
+    filter: drop-shadow(-10px 10px 30px rgba(0, 0, 0, 0.25));
+    transition: all 0.4s ease;
+}
+
+section.about-us .container .mobile-and-text .mobile-side .about-mobile1 img:hover{
+    transform: scale(105%);
+}
+
+section.about-us .container .mobile-and-text .mobile-side{
+    padding-top: 15rem;
+}
+
+section.about-us .container .mobile-and-text .text-side{
+    margin-left: 5rem;
+    margin-top: 6rem;
+}
+
+section.about-us .container .mobile-and-text .text-side h2{
+    font-family: 'poppins-bold';
+    font-weight: 700;
+    font-size: 46px;
+    color: var(--text);
+    line-height: 113%;
+}
+
+section.about-us .container .mobile-and-text .text-side p{
+    font-family: 'poppins-regular';
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 1rem;
+    color: var(--para);
+}
+
+section.about-us .container .mobile-and-text .text-side .m1-b, section.about-us .container .mobile-and-text .text-side .m2-b{
+    margin-top: 3rem;
+}
+
+section.about-us .container .mobile-and-text .text-side .m1-b a{
+    text-decoration: none;
+    background: var(--primary);
+    color: var(--heaven);
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    box-shadow: -12px 5px 30px 1px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+}
+
+section.about-us .container .mobile-and-text .text-side .m1-b a:hover{
+    background: var(--secondary);
+}
+
+section.about-us .container .mobile-and-text .text-side .m2-b a{
+    text-decoration: none;
+    background: var(--heaven);
+    color: var(--primary);
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    transition: all 0.4s ease;
+}
+
+section.about-us .container .mobile-and-text .text-side .m2-b a:hover{
+    background: var(--primary);
+    color: var(--heaven);
+    box-shadow: -12px 5px 30px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+/* End  */
+
+
+
+
+
+
+/* Our Clients  */
+
+section.our-client .ellips6{
+    position: absolute;
+    left: 107.4rem;
+}
+
+section.our-client .container .heading-our-client h1{
+    font-family: 'poppins-bold';
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+section.our-client .container .heading-our-client p{
+    font-family: 'poppins-regular';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 113.5%;
+    text-align: center;
+    margin-top: 2rem;
+    margin: 0 15rem;
+    color: var(--para);
+}
+
+section.our-client .container .client-logos .first-3{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 9rem;
+}
+
+
+section.our-client .container .client-logos .second-3{
+    display: flex;
+    justify-content: space-between;
+    margin: -2rem 9rem;
+}
+
+section.our-client .container .client-logos .second-3 a img, section.our-client .container .client-logos .first-3 a img{
+    transition: all 0.4s ease;
+}
+
+section.our-client .container .client-logos .second-3 a img:hover{
+    transform: scale(110%);
+}
+
+section.our-client .container .client-logos .first-3 a img:hover{
+    transform: scale(110%);
+}
+
+/* End  */
+
+
+
+
+
+
+/* Testimonials  */
+
+section.testimonials .container .heading-testimonials h1{
+    font-family: 'poppins-bold';
+    font-size: 80px;
+    font-weight: 700;
+    color: var(--text);
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+section.testimonials .container .heading-testimonials p{
+    font-family: 'poppins-regular';
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--para);
+    line-height: 113.5%;
+    text-align: center;
+    margin: 0 15rem;
+    margin-top: 2rem;
+}
+
+section.testimonials .container .testimonial-boxs .f-2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+
+section.testimonials .container .testimonial-boxs .s-2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+}
+
+section.testimonials .container .testimonial-boxs .f-2 .test1{
+    width: 626px;
+    height: 274px;
+    background: var(--testimonials);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 3rem;
+    transition: all 0.4s ease;
+}
+
+section.testimonials .container .testimonial-boxs .f-2 .test1:hover{
+    box-shadow: -7px 7px 25px rgba(0, 0, 0, 0.25);
+}
+
+section.testimonials .container .testimonial-boxs .f-2 .test2{
+    width: 626px;
+    height: 274px;
+    background: var(--testimonials);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-right: 3rem;
+    transition: all 0.4s ease;
+}
+
+section.testimonials .container .testimonial-boxs .f-2 .test2:hover{
+    box-shadow: -7px 7px 25px rgba(0, 0, 0, 0.25);
+}
+
+section.testimonials .container .testimonial-boxs .s-2 .test3{
+    width: 626px;
+    height: 274px;
+    background: var(--testimonials);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: 3rem;
+    transition: all 0.4s ease;
+}
+
+section.testimonials .container .testimonial-boxs .s-2 .test3:hover{
+    box-shadow: -7px 7px 25px rgba(0, 0, 0, 0.25);
+}
+
+section.testimonials .container .testimonial-boxs .s-2 .test4{
+    width: 626px;
+    height: 274px;
+    background: var(--testimonials);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-right: 3rem;
+    transition: all 0.4s ease;
+}
+
+section.testimonials .container .testimonial-boxs .s-2 .test4:hover{
+    box-shadow: -7px 7px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+        /* Text Data f-2 t-1 */
+
+        section.testimonials .container .testimonial-boxs .f-2 .test1 p, section.testimonials .container .testimonial-boxs .f-2 .test2 p, section.testimonials .container .testimonial-boxs .s-2 .test3 p, section.testimonials .container .testimonial-boxs .s-2 .test4 p{
+            font-family: 'poppins-italic';
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 113.5%;
+            color: var(--para);
+        }
+
+        section.testimonials .container .testimonial-boxs .f-2 .test1 .test-data, section.testimonials .container .testimonial-boxs .f-2 .test2 .test-data, section.testimonials .container .testimonial-boxs .s-2 .test3 .test-data, section.testimonials .container .testimonial-boxs .s-2 .test4 .test-data{
+            padding: 2rem;
+        }
+
+        section.testimonials .container .testimonial-boxs .f-2 .test1 .testmd, section.testimonials .container .testimonial-boxs .f-2 .test2 .testmd, section.testimonials .container .testimonial-boxs .s-2 .test3 .testmd, section.testimonials .container .testimonial-boxs .s-2 .test4 .testmd{
+            margin-top: 2.5rem;
+        }
+
+        section.testimonials .container .testimonial-boxs .f-2 .test1 .testmd h3,  section.testimonials .container .testimonial-boxs .f-2 .test2 .testmd h3, section.testimonials .container .testimonial-boxs .s-2 .test3 .testmd h3, section.testimonials .container .testimonial-boxs .s-2 .test4 .testmd h3{
+            margin-left: 1.5rem;
+            line-height: 113.5%;
+            margin-top: 0.60rem;
+        }
+
+        section.testimonials .container .testimonial-boxs .f-2 .test1 .testmd h3 span, section.testimonials .container .testimonial-boxs .f-2 .test2 .testmd h3 span, section.testimonials .container .testimonial-boxs .s-2 .test3 .testmd h3 span, section.testimonials .container .testimonial-boxs .s-2 .test4 .testmd h3 span{
+            font-family: 'poppins-regular';
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        /* End  */
+
+
+/* End  */
+
+
+
+
+/* FAQ's  */
+
+
+section.top-faqs .container .heading-faq{
+    padding-top: 10rem;
+}
+
+section.top-faqs .container .heading-faq h1{
+    font-family: 'poppins-bold';
+    font-weight: 700;
+    font-size: 90px;
+    color: var(--text);
+    text-align: center;
+}
+
+section.top-faqs .container .faq-01 .data-01{
+    width: 898px;
+    height: 140px;
+    background: var(--testimonials);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+section.top-faqs .container .faq-01 .data-01:hover{
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+section.top-faqs .container .faq-01 .data-02:hover{
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+section.top-faqs .container .faq-01 .data-01 i{
+    margin-left: 3rem;
+}
+
+section.top-faqs .container .faq-01 .data-01 h3{
+    font-family: 'poppins-medium';
+    font-weight: 500;
+    font-size: 24px;
+    margin-left: 2rem;
+}
+
+section.top-faqs .container .faqs > div{
+    margin-top: 3rem;
+}
+
+section.top-faqs .container .faq-01 .data-02{
+    width: 898px;
+    height: 232px;
+    background: var(--testimonials);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+section.top-faqs .container .faq-01 .data-02 i{
+    margin-left: 3rem;
+    color: red;
+    float: left;
+    margin-top: 6px;
+    margin-right: 2rem;
+    padding-top: 3.1rem;
+}
+
+section.top-faqs .container .faq-01 .data-02 h3{
+    font-family: 'poppins-medium';
+    font-weight: 500;
+    font-size: 24px;
+    float: left;
+    margin-top: 3rem;
+}
+
+section.top-faqs .container .faq-01 .data-02 .d2-p{
+    float: left;
+}
+
+section.top-faqs .container .faq-01 .data-02 .d2-p p{
+    margin-left: 6rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 113.5%;
+    font-family: 'poppins-italic';
+    color: var(--para);
+}
+
+section.top-faqs .vector-p2 img{
+    position: absolute;
+    left: 75rem;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* End  */
+
+
+
+
+
+/* Download App  */
+
+section.down-app .container .main-down{
+    padding-top: 10rem;
+}
+
+section.down-app .container .main-down .data-text h1{
+    font-family: 'poppins-bold';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 115.5%;
+    color: var(--text);
+}
+
+section.down-app .container .main-down .data-text p{
+    font-family: 'poppins-light';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 113.5%;
+    margin-top: 2rem;
+    color: var(--para);
+    margin-right: 3.5rem;
+}
+
+section.down-app .container .main-down .data-text .don-btn img{
+    margin-left: -2.5rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+section.down-app .container .main-down .data-text .don-btn img:hover{
+    transform: scale(96%);
+}
+
+section.down-app .container .main-down .mob-side img{
+    width: 495px;
+    height: 665px;
+    margin-left: 5rem;
+    filter: drop-shadow(-10px 10px 30px rgba(0, 0, 0, 0.25));
+    transition: all 0.4s ease;
+}
+
+
+section.down-app .container .main-down .mob-side img:hover{
+    transform: scale(115%);
+}
+
+section.down-app .ellips7 img{
+    position: absolute;
+    top: 400rem;
+}
+
+section.down-app .container .subscribe{
+    background: var(--gradient);
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    margin-top: 7rem;
+    filter: drop-shadow(-10px 10px 30px rgba(0, 0, 0, 0.25));
+}
+
+section.down-app .container .subscribe .main-data-sub .text-data-sub{
+    margin-right: 15rem;
+    margin-top: 6rem;
+}
+
+section.down-app .container .subscribe .main-data-sub .text-data-sub h1{
+    font-family: 'poppins-Semibold';
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--heaven);
+}
+
+section.down-app .container .subscribe .main-data-sub .text-data-sub p{
+    font-family: 'poppins-light';
+    font-size: 20px;
+    color: var(--heaven);
+    margin-right: 5rem;
+    line-height: 132%;
+    margin-top: 1rem;
+}
+
+section.down-app .container .subscribe .button-sub a{
+    background: transparent;
+    border: 1px solid var(--heaven);
+    display: block;
+    padding: 1.2rem 4.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--heaven);
+    transition: all 0.4s ease;
+}
+
+section.down-app .container .subscribe .button-sub a:hover{
+    background: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+section.down-app .container .subscribe .main-data-sub .button-sub {
+    margin-top: 7rem;
+}
+
+/* End  */
+
+
+
+
+
+
+/* Footer  */
+
+footer.last-footer{
+    background: var(--testimonials);
+    margin-top: 10rem;
+    padding: 7rem 0;
+}
+
+footer.last-footer .container .main-footer .subs-footer .input-wrap{
+    display: flex;
+    padding: -1rem 1rem;
+    border-radius: 5px;
+}
+
+footer.last-footer .container .main-footer .subs-footer .input-wrap input{
+    width: 100%;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+    background: var(--testimonials);
+    margin-right: 0.50rem;
+    border: 1px solid rgba(18, 26, 39, 0.25);
+    border-radius: 6px;
+    transition: all 0.4s ease;
+}
+
+footer.last-footer .container .main-footer .subs-footer .input-wrap input:focus{
+    outline: none;
+    padding-right: 3rem;
+}
+
+footer.last-footer .container .main-footer .subs-footer .input-wrap button{
+    padding: 0.8rem 2rem;
+    border: 1px solid var(--primary);
+    background: var(--primary);
+    color: var(--heaven);
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+footer.last-footer .container .main-footer .subs-footer .input-wrap button:hover{
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+footer.last-footer .container .main-footer .subs-footer .about-us-footer h2{
+    margin-bottom: 1.5rem;
+}
+
+footer.last-footer .container .main-footer .subs-footer .about-us-footer p{
+    font-family: 'poppins-regular';
+    font-size: 15px;
+    line-height: 113%;
+    margin-bottom: 2rem;
+}
+
+footer.last-footer .container .main-footer .services-footer h2{
+    margin-bottom: 1.5rem;
+}
+
+footer.last-footer .container .main-footer .services-footer ul li{
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+footer.last-footer .container .main-footer .services-footer ul li a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+footer.last-footer .container .main-footer .quick-links h2{
+    margin-bottom: 1.5rem;
+}
+
+footer.last-footer .container .main-footer .quick-links ul li{
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+footer.last-footer .container .main-footer .quick-links ul li a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+footer.last-footer .container .main-footer .social-icons h2{
+    margin-bottom: 1.5rem;
+}
+
+footer.last-footer .container .main-footer .social-icons a{
+    display: block;
+    width: 150px;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--text);
+}
+
+footer.last-footer .container .main-footer .social-icons a i{
+    margin-right: 1rem;
+}
+
+/* End  */
+
+
+footer.copyright{
+    background: var(--primary);
+}
+
+footer.copyright .copyright-data{
+    padding: 1rem 0;
+}
+
+footer.copyright .copyright-data h3{
+    color: var(--heaven);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins-light';
+    font-weight: 200;
+}
+
+footer.copyright .copyright-data h3 a{
+    margin-left: 0.60rem;
+    text-decoration: none;
+    color: var(--ternary);
+}
+
+footer.copyright .copyright-data h3 a:hover{
+    color: var(--secondary);
+}
